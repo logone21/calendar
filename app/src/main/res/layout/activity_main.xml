@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/foto"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="186dp"
+        android:layout_height="172dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_3"
+        android:contentDescription=""
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        android:layout_marginTop="22dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <TextView
+        android:id="@+id/fragmentATitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пери Женишбекова"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        />
+
+    <Button
+        android:id="@+id/btm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="выбрать время записи"
+        android:textSize="16sp"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@tools:sample/date/ddmmyy"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/btm_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <Button
+        android:id="@+id/btm_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textSize="16sp"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
